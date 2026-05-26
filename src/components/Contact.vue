@@ -69,7 +69,7 @@
 
     /*recaptcha integration*/
     // 6Ldn5_YsAAAAAKMODxn2LbKCv9b2gF2zK3tU3Ihx
-    const SITE_KEY = '6LdkqvgsAAAAAIscoOB4f4fnGcntCNgicW8xwt-i';
+    const SITE_KEY = '6LdgrP0sAAAAALGoO-96sOmvUtdnCZmnaJEOaihh';
 
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
@@ -171,6 +171,9 @@
 				<!-- Submit Button -->
 				<button :disabled="isLoading" type="submit" class="btn-contact">{{ isLoading ? "Sending..." : "Submit" }}</button>
 
+				<div class="d-flex justify-content-end mt-2">
+					<div ref="recaptchaContainer"></div>
+				</div>
 				<!-- Socials -->
 				<div class="d-flex gap-2 mt-4">
 					<a href="https://github.com/sirjareth" class="social-btn" title="GitHub" target="_blank">
