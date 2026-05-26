@@ -1,0 +1,402 @@
+/* ================================
+   CSS RESET
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================
+   GLOBAL
+   ================================ */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Sora', sans-serif;
+}
+
+/* ================================
+   NAVBAR
+   ================================ */
+
+#mainNav {
+    /*Dark Navy*/
+    background-color: #0a1628 ;
+}
+
+#mainNav .navbar-brand {
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand strong {
+    /*teal / cyan green*/
+    color: #00C9A7; 
+}
+
+
+#mainNav .nav-link {
+
+    font-family: 'Sora', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#mainNav .nav-link.active {
+    color: #00C9A7 !important;
+    border-bottom: 2px solid #00C9A7;
+}
+
+.btn-resume {
+    background-color: #00C9A7;
+    color: #0a1628 !important;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;        
+    width: fit-content;  
+    /*margin-top: 8px;         */
+}
+
+.btn-resume:hover {
+    background-color: #00b096;
+    color: #0a1628 !important;
+
+}
+
+/* Nav Bar End */
+
+
+/* ================================
+   SECTION LABELS
+   ================================ */
+   
+.section-label {
+    color: #00C9A7;
+    font-family: 'Sora', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+
+.section-label {
+    font-family: 'Sora', sans-serif;
+    color: #00C9A7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.title-teal {
+    color: #00C9A7;
+}
+
+.title-white {
+    color: #ffffff;
+}
+
+/* ================================
+   LANDING
+   ================================ */
+
+
+
+/* Landing section dark background */
+#landing {
+    background: linear-gradient(135deg, #004d40, #0077b6);
+    /*background-color: #0a1628;*/
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+/* Name */
+#landing h1 {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+/* Role text — small uppercase above name */
+.landing-role {
+    color: #00C9A7;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/*.landing-role strong {
+    color: #ffffff;
+}*/
+
+
+/* Teal part of name */
+.landing-name-teal {
+    color: #00C9A7;
+}
+
+/* Description */
+.landing-desc {
+    color: #d0e8f0;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-top: 12px;
+}
+
+/* View My Work button */
+.btn-work {
+    background-color: #00C9A7;
+    color: #0a1628 !important;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 18px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-work:hover {
+    background-color: #00b096;
+}
+
+/* View My Resume button */
+.btn-resume-outline {
+    background-color: transparent;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 18px 28px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+.btn-resume-outline:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ================================
+   PROJECTS
+   ================================ */
+
+#projects {
+    background-color: #0d1f38 !important;
+    min-height: 100vh;
+}
+
+#projects h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Project card hover effect */
+.project-card {
+    background-color: #0d2137;
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 201, 167, 0.13);
+}
+
+/* Project card image — fixed height */
+.project-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    
+    padding: 10px;
+    transition: transform 0.4s ease;
+}
+
+.project-card .card-body {
+    padding: 16px 20px 20px;
+}
+
+.project-card h5 {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #a0b8cc;  
+    font-size: 14px;
+    /*line-height: 1.7;*/
+}
+
+/* Profile image border */
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+    border: 4px solid #00C9A7;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ================================
+   TOOLS
+   ================================ */
+
+/* Projects Tools Contact h1 */
+
+
+
+#tools {
+    background-color: #112240;
+}
+
+#tools h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#tools h4 {
+    color: #ffffff;
+    
+}
+/* Tool card fixed size */
+.tool-card {
+    width: 110px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: #0d6efd;
+}
+
+
+/* ================================
+   CONTACT
+   ================================ */
+
+#contact {
+    background-color: #0d1f38;
+}
+
+#contact h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Google Map — removes inline style */
+.contact-map {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-contact {
+    background-color: #00C9A7;
+    color: #0a1628 !important;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;        
+    width: fit-content;  
+    border: none;
+}
+
+.btn-contact:hover {
+    background-color: #00b096;
+}
+
+form label {
+    color: white;
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: white;
+  padding: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: rgba(0, 201, 167, 0.1);
+  transform: translateY(-2px);
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+/* Footer */
+footer {
+    background-color: #0a1628;
+    color: #a0b8cc;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #00C9A7;
+}
